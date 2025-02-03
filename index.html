@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBANK - Input Transaction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>UBANK</h1>
+            <p>Your Trusted Banking Partner in AUS</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Input Transaction</a></li>
+                <li><a href="transactions.html">View Transactions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="transaction-form">
+            <h2>Input Transaction</h2>
+            <form id="transactionForm">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" placeholder="Enter transaction description" required>
+
+                <label for="amount">Amount (AUD):</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+                <label for="type">Transaction Type:</label>
+                <select id="type" name="type" required>
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                </select>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 UBANK. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
